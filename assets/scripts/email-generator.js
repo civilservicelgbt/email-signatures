@@ -2,12 +2,35 @@
 // EMAIL GENERATOR
 // ========================== //
 
+function getField(el) {
+	var content = document.getElementById(el).value;
+	return content;
+}
+
+function getRadios(el) {
+	var radios = document.getElementsByName(el);
+	for (var i = 0, length = radios.length; i < length; i++) {
+		if (radios[i].checked) {
+		  // do whatever you want with the checked radio
+		  value = radios[i].value;
+		  // only one radio can be logically checked, don't check the rest
+		  break;
+		}
+	}
+	return value;
+}
+
+
+
 function generatePreview() {
 	// Get the options
-	var yourname = "Joan Doe";
-	var yourrole = "Volunteer";
-	var phonenumber = "07123 123456";
-	var emailaddress = "info@civilservice.lgbt";
+	var format = getRadios('sig-format');
+	
+	// Get fields
+	var yourname = getField('sig-name');
+	var yourrole = getField('sig-role');
+	var phonenumber = getField('sig-number');
+	var emailaddress = getField('sig-email');
 	
 	// Generate the signature
 	var signature = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><HTML><HEAD><TITLE>Civil Serivce LGBT+ Network – Email signature</TITLE><META content="text/html; charset=utf-8" http-equiv="Content-Type"></HEAD><BODY style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
@@ -114,16 +137,22 @@ function generatePreview() {
 	parsedoutput.innerHTML = signature;
 	// Update the raw HTML output
 	var textarea = document.getElementById("html-output");
-	textarea.innerHTML = signature;
+	textarea.value = signature;
 }
 
 function copySignature(el) {
 	// Check the output format
+	var sigOutput = getRadios('sig-output');
 	
-	// Get the content of the block
-	var clipboardContent = document.getElementById(el);
-	// OR get the content of the textarea
-	var clipboardContent = document.getElementById(el);
+	if (sigOutput == "parsed") {
+		// Get the parsed block;
+		var clipboardContent = document.getElementById('parsed-output');
+	} else if (sigOutput == "html") {
+		// OR Get the textarea content instead
+		var clipboardContent = document.getElementById('html-output');
+		var clipboardContent = clipboardContent.value;
+	}
+	
 	
 	// Copy to the clipboard
 	
