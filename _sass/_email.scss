@@ -1,0 +1,172 @@
+// Page styles
+
+main#email-signature {
+  @supports (display: grid) {
+	display: grid;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	  "page-title"
+	  "page-lead-paragraph"
+	  "page-help"
+	  "page-content"
+	  "signature-preview";
+
+	@include md-up {
+	  grid-template-rows: auto auto auto auto auto;
+	  grid-template-columns: 1fr auto;
+	  grid-column-gap: 30px;
+	  grid-template-areas:
+		"page-title page-title"
+		"page-lead-paragraph ."
+		"page-help page-help"
+		"page-content signature-preview";
+	}
+  }
+
+  @include clearfix;
+
+  padding: 45px 0;
+
+  div#page-title {
+	@supports (display: grid) {
+	  grid-area: page-title;
+	}
+
+	margin-top: 45px;
+	margin-bottom: 45px;
+
+	h1.page-title {
+	  margin: 0;
+	  padding: 0;
+	}
+  }
+  div#signature-preview {
+	@supports (display: grid) {
+	  grid-area: signature-preview;
+	}
+  }
+
+  div#page-lead-paragraph {
+	@supports (display: grid) {
+	  grid-area: page-lead-paragraph;
+	}
+
+	margin-bottom: 45px;
+
+	p:first-child {
+	  font-size: $font-size-base + 5px;
+	}
+  }
+  
+  div#page-help {
+	@supports (display: grid) {
+	  grid-area: page-help;
+	}
+
+	margin-bottom: 45px;
+	
+	ul,ol {
+	  li {
+		padding-bottom: $container-padding * 0.5;
+	  }
+	}
+  }
+
+  div#page-content {
+	@include md-up {
+	  width: 67%;
+	  float: left;
+	  clear: left;
+	}
+
+	@supports (display: grid) {
+	  width: 100%;
+	  float: none;
+	  clear: none;
+	  grid-area: page-content;
+	}
+
+	margin-bottom: 45px;
+	padding-top: 0;
+	
+	button,
+	a.button {
+	  margin-bottom: 0;
+	  margin-right: $container-padding;
+	  padding: ($container-padding * 0.5) ($container-padding * 2);
+	}
+	
+	button + label,
+	button + p {
+	  margin-top: $container-padding * 2;
+	}
+	
+	span.optional {
+	  color: $dark-gray;
+	  font-weight: normal;
+	  font-style: italic;
+	  margin-left: $container-padding;
+	}
+	
+  }
+	
+  div#post-buttons {
+	padding-top: $container-padding;
+	border-top: 2px solid $light-gray;
+	p {
+	  @include clearfix;
+	}
+  }
+
+  details {
+	&.collection--posts--item {
+	  padding: ($container-padding * 0.5);
+	  border-top: 1px solid $light-gray;
+	  &:first-of-type {
+		border: none;
+	  }
+	}
+  }
+  
+  summary {
+	&.collection--label {
+	  text-transform: capitalize;
+	}
+	&.collection--posts--item--label {
+	  display: block;
+	  text-transform: capitalize;
+	  font-weight: normal;
+	  max-width: 100%;
+	  header {
+		display: inline-block;
+		width: calc(100% - (#{$container-padding} * 2));
+	  }
+	  span.title {
+		display: block;
+		max-width: 50ch;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+	  }
+	  span.date {
+		color: $dark-gray;
+	  }
+	}
+  }
+  
+  details > summary:hover span.date {
+	color: inherit;
+  }
+  
+  details > summary:active span.date {
+	color: $white;
+  }
+  
+  
+  details > details {
+	margin-left: $container-padding * 2;
+  }
+  
+
+}

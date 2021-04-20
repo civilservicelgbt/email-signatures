@@ -1,0 +1,158 @@
+---
+layout: global/default
+---
+
+<main id="{{ page.layout | slugify }}">
+	
+	<div id="page-title">		
+		<h1 class="page-title">{{ page.title }}</h1>
+	</div>
+	
+	<div id="page-lead-paragraph">
+		<p>{{ page.excerpt }}</p>
+	</div>
+	
+	<div id="page-help">
+		
+		<h2>Help</h2>
+		
+		<details open>
+			<summary>
+				<h2>🏁 Getting started</h2>
+			</summary>
+			{{ content }}
+		
+		</details>
+		
+	</div>
+	
+	<div id="page-content">
+		
+		<div id="signature-settings">
+			
+			<h2>Settings</h2>
+			
+			<fieldset id="sig-format">
+			<details>
+				
+				<summary>
+					<h3><legend>Choose a style</legend></h3>
+				</summary>
+				
+				<p class="legend">Which email signature format do you want to use?</p>
+				
+				<div class="radio-input">
+					<input type="radio" name="sig-format" id="sig-format-default" value="default" checked>
+					<label for="sig-format-default">
+						Default
+					</label>
+				</div>
+				
+				<div class="radio-input">
+					<input type="radio" name="sig-format" id="sig-format-PrideOn2021" value="PrideOn2021">
+					<label for="sig-format-PrideOn2021">
+						Pride On 2021
+					</label>
+				</div>
+				
+				
+				
+			</details>
+			</fieldset>
+			
+			<fieldset id="sig-fields">
+				<details>
+					
+					<summary>
+						<h3><legend>Enter your details</legend></h3>
+					</summary>
+					
+					<div class="text-input">
+						<label for="sig-name">Your name</label>
+						<input id="sig-name" name="sig-name" type="text" placeholder="Joan Doe">
+					</div>
+					
+					<div class="text-input">
+						<label for="sig-role">Your role</label>
+						<input id="sig-role" name="sig-role" type="text" placeholder="Volunteer">
+					</div>
+					
+					<div class="text-input">
+						<label for="sig-number">Your phone number</label>
+						<input id="sig-number" name="sig-number" type="text" placeholder="07000 100 200">
+					</div>
+					
+					<div class="text-input">
+						<label for="sig-email">Your email</label>
+						<input id="sig-email" name="sig-email" type="email" placeholder="info@civilservice.lgbt">
+					</div>
+					
+				</details>
+				
+			</fieldset>
+			
+			<fieldset id="sig-fields">
+			<details open>
+				
+				<summary>
+					<h3>Signature output options</h3>
+				</summary>
+				
+					<p class="legend">Signature output format</p>
+					<p class="label-hint">Some email clients support “parsed” email signatures and some require you to paste plain “HTML”.</p>
+					
+					<div class="radio-input">
+						<input onchange="generatePreview()" type="radio" name="sig-output" id="sig-output-parsed" value="parsed" checked>
+						<label for="sig-output-parsed">
+							Parsed
+						</label>
+					</div>
+					
+					<div class="radio-input">
+						<input onchange="generatePreview()" type="radio" name="sig-output" id="sig-output-html" value="html">
+						<label for="sig-output-html">
+							Plain HTML
+						</label>
+					</div>
+					
+			</details>
+			</fieldset>
+			
+			<details>
+				
+				<summary>
+					<h3>Copy signature</h3>
+				</summary>
+				
+					<label for="copy-signature">
+						Copy signature
+					</label>
+					<p class="label-hint">Use this button to copy the signature if you are going to use it with Thunderbird, Exchange Server or Exchange Online.</p>
+					<button onClick="copySignature()" id="copy-signature">Copy signature</button>
+				
+			</details>
+			
+		</div>
+		
+		
+		
+	</div>
+	
+	<div id="signature-preview">
+		
+		<h2>Preview</h2>
+		
+		<div id="parsed-output">
+		
+			
+		
+		</div>
+		
+		<textarea id="html-output" rows="10">
+			
+		</textarea>
+	</div>
+	
+</main>
+
+<script type="text/javascript" src="{{ site.url | append: site.baseurl | append: site.js-path | append: '/email-generator.js' }}"></script>
