@@ -15,7 +15,7 @@ author: "Civil Service LGBT+ Network"
 organisation: "Civil Service LGBT+ Network"
 email: "info@civilservice.lgbt"
 
-baseurl: "/email-signature" # the subpath of your site, e.g. /blog
+baseurl: "/email-signatures" # the subpath of your site, e.g. /blog
 url: "https://www.civilservice.lgbt"
 
 #########################
