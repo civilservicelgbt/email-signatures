@@ -59,18 +59,18 @@ function SignatureDefault(name, role, phone, email) {
 		
 		<tr>
 			
-			<td width="240" style="background-color:#ededed; padding:10px; width:240px; vertical-align:top; line-height: 18pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="top">
+			<td width="240" style="background-color:#ededed; padding:10px; width:240px; vertical-align:bottom; line-height: 18pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="bottom">
 
 				<!-- Phone -->
-				<span style="display: inline-block; color:#e6007e; font-size: 10pt; width: 20px; margin-right: 10px; text-align: center;"><strong>☎︎</strong></span>
-				<span style="color:#1d1d1d;">`
+				<span style="display: block; float: left; width: 5ch;  color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>tel</strong></span>
+				<span style="color:#1d1d1d; text-align: left; vertical-align: middle;">`
 			
 	signature += phonenumber;
 	
 	signature += `</span>
 				<br>
 				<!-- Email -->
-				<span style="display: inline-block; color:#e6007e; font-size: 10pt; width: 20px; margin-right: 10px;text-align: center;"><strong>@</strong></span>
+				<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left;"><strong>@</strong></span>
 				<span style="color:#1d1d1d;"><a href="mailto:`
 	
 	signature += emailaddress;
@@ -83,22 +83,22 @@ function SignatureDefault(name, role, phone, email) {
 	
 				<br>
 				<!-- Website -->
-				<span style="display: inline-block; color:#e6007e; font-size: 5pt; width: 20px; margin-right: 10px;text-align: center; vertical-align: middle;"><strong>www</strong></span>
+				<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>web</strong></span>
 				<span style="color:#1d1d1d;"><a href="//www.civilservice.lgbt" target="_blank" rel="noopener" style="color: #1d1d1d">www.civilservice.lgbt</a></span><br>
 
 				<br>
 				<!-- Twitter -->
-				<span style="display: inline-block; color:#e6007e; font-size: 10pt; width: 20px; margin-right: 10px;text-align: center; vertical-align: middle;"><strong>tw</strong></span>
+				<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>tw</strong></span>
 				<span style="color:#1d1d1d;"><a href="//twitter.com/cslgbt" target="_blank" rel="noopener" style="color: #1d1d1d">@cslgbt</a></span>
 				
 				<br>
 				<!-- Facebook -->
-				<span style="display: inline-block; color:#e6007e; font-size: 10pt; width: 20px; margin-right: 10px;text-align: center; vertical-align: middle;"><strong>fb</strong></span>
+				<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>fb</strong></span>
 				<span style="color:#1d1d1d;"><a href="//facebook.com/civilservicelgbt" target="_blank" rel="noopener" style="color: #1d1d1d">/civilservicelgbt</a></span>
 				
 				<br>
 				<!-- Instagram -->
-				<span style="display: inline-block; color:#e6007e; font-size: 10pt; width: 20px; margin-right: 10px;text-align: center; vertical-align: middle;"><strong>in</strong></span>
+				<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>in</strong></span>
 				<span style="color:#1d1d1d;"><a href="//instagram.com/civilservicelgbt" target="_blank" rel="noopener" style="color: #1d1d1d">@civilservicelgbt</a></span>
 				
 			</td>
@@ -107,8 +107,9 @@ function SignatureDefault(name, role, phone, email) {
 				<strong>We're helping to create a more diverse, inclusive and equal place to work for lesbian, gay, bisexual and trans civil servants.</strong>
 				<br>
 				<br>
-				<span style="">Find out more at
-				<strong><a href="https://www.civilservice.lgbt" style="display: inline-block; text-decoration: none; cursor: pointer; color:#ffed00;" target="_blank" rel="noopener">www.civilservice.lgbt</a></strong></span>
+				<span>Find out more at</span>
+				<br>
+				<span><strong><a href="https://www.civilservice.lgbt" style="text-decoration: none; cursor: pointer; color:#ffed00;" target="_blank" rel="noopener">www.civilservice.lgbt</a></strong></span>
 			</td>
 			
 		</tr>
@@ -160,18 +161,18 @@ function SignaturePrideOn(name, role, phone, email) {
 		
 		<tr>
 			
-			<td rowspan="2" width="240" style="background-color:#ededed; padding:10px; width:240px; vertical-align:top; line-height: 18pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="top">
+			<td rowspan="2" width="240" style="background-color:#ededed; padding:10px; width:240px; vertical-align:bottom; line-height: 18pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="bottom">
 
 				<!-- Phone -->
-				<span style="display: inline-block; color:#e6007e; font-size: 10pt; width: 20px; margin-right: 10px; text-align: center;"><strong>☎︎</strong></span>
-				<span style="color:#1d1d1d;">`
+				<span style="display: block; float: left; width: 5ch;  color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>tel</strong></span>
+				<span style="display: block; float: left; width: 5ch; color:#1d1d1d; text-align: left; vertical-align: middle;">`
 			
 	signature += phonenumber;
 	
 	signature += `</span>
 				<br>
 				<!-- Email -->
-				<span style="display: inline-block; color:#e6007e; font-size: 10pt; width: 20px; margin-right: 10px;text-align: center;"><strong>@</strong></span>
+				<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left;"><strong>@</strong></span>
 				<span style="color:#1d1d1d;"><a href="mailto:`
 	
 	signature += emailaddress;
@@ -181,25 +182,25 @@ function SignaturePrideOn(name, role, phone, email) {
 	signature += emailaddress; 
 	
 	signature += `</a></span>
-	
-				<br>
-				<!-- Website -->
-				<span style="display: inline-block; color:#e6007e; font-size: 5pt; width: 20px; margin-right: 10px;text-align: center; vertical-align: middle;"><strong>www</strong></span>
-				<span style="color:#1d1d1d;"><a href="//www.civilservice.lgbt" target="_blank" rel="noopener" style="color: #1d1d1d">www.civilservice.lgbt</a></span><br>
 
 				<br>
+				<!-- Website -->
+				<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>web</strong></span>
+				<span style="color:#1d1d1d;"><a href="//www.civilservice.lgbt" target="_blank" rel="noopener" style="color: #1d1d1d">www.civilservice.lgbt</a></span><br>
+			
+				<br>
 				<!-- Twitter -->
-				<span style="display: inline-block; color:#e6007e; font-size: 10pt; width: 20px; margin-right: 10px;text-align: center; vertical-align: middle;"><strong>tw</strong></span>
+				<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>tw</strong></span>
 				<span style="color:#1d1d1d;"><a href="//twitter.com/cslgbt" target="_blank" rel="noopener" style="color: #1d1d1d">@cslgbt</a></span>
 				
 				<br>
 				<!-- Facebook -->
-				<span style="display: inline-block; color:#e6007e; font-size: 10pt; width: 20px; margin-right: 10px;text-align: center; vertical-align: middle;"><strong>fb</strong></span>
+				<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>fb</strong></span>
 				<span style="color:#1d1d1d;"><a href="//facebook.com/civilservicelgbt" target="_blank" rel="noopener" style="color: #1d1d1d">/civilservicelgbt</a></span>
 				
 				<br>
 				<!-- Instagram -->
-				<span style="display: inline-block; color:#e6007e; font-size: 10pt; width: 20px; margin-right: 10px;text-align: center; vertical-align: middle;"><strong>in</strong></span>
+				<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>in</strong></span>
 				<span style="color:#1d1d1d;"><a href="//instagram.com/civilservicelgbt" target="_blank" rel="noopener" style="color: #1d1d1d">@civilservicelgbt</a></span>
 				
 			</td>
@@ -215,8 +216,9 @@ function SignaturePrideOn(name, role, phone, email) {
 			<td width="240" style="line-height: 15pt; background-color:#e6007e; padding:10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1;" valign="bottom">
 				<strong>We're keeping Pride On</strong>
 				<br>
-				<span>Get involved at
-				<strong><a href="https://www.civilservice.lgbt/pride" style="display: inline-block; text-decoration: none; cursor: pointer; color:#ffed00;" target="_blank" rel="noopener">www.civilservice.lgbt/pride</a></strong></span>
+				<span>Get involved at</span>
+				<br>
+				<span><strong><a href="https://www.civilservice.lgbt/pride" style="text-decoration: none; cursor: pointer; color:#ffed00;" target="_blank" rel="noopener">www.civilservice.lgbt/pride</a></strong></span>
 			</td>
 			
 		</tr>
