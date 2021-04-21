@@ -250,28 +250,57 @@ function generatePreview() {
 	}
 	
 	// Update the preview
-	var parsedoutput = document.getElementById("parsed-output");
+	var parsedoutput = document.getElementById("email-signature-block");
 	parsedoutput.innerHTML = signature;
 	// Update the raw HTML output
 	var textarea = document.getElementById("html-output");
 	textarea.value = signature;
 }
 
-function copySignature(el) {
+function copyToClip(str) {
+	function listener(e) {
+		e.clipboardData.setData("text/html", str);
+		e.clipboardData.setData("text/plain", str);
+		e.preventDefault();
+	}
+	document.addEventListener("copy", listener);
+	document.execCommand("copy");
+	document.removeEventListener("copy", listener);
+};
+
+function copySignature() {
 	// Check the output format
 	var sigOutput = getRadios('sig-output');
 	
 	if (sigOutput == "parsed") {
 		// Get the parsed block;
-		var clipboardContent = document.getElementById('parsed-output');
+		var clipboardContent = document.getElementById('email-signature-block').outerHTML;
+		// Copy to the clipboard
 	} else if (sigOutput == "html") {
 		// OR Get the textarea content instead
 		var clipboardContent = document.getElementById('html-output');
 		var clipboardContent = clipboardContent.value;
+		// // Copy to the clipboard
+		// navigator.clipboard.writeText(clipboardContent);
 	}
+	var clipboardContent = [
+		new ClipboardItem(
+			{ 
+				"text/html": new Blob(
+					[clipboardContent], { 
+						type: "text/html" 
+					}
+				) 
+			}
+		)
+	];
 	
 	
-	// Copy to the clipboard
 	
-	navigator.clipboard.writeText(clipboardContent);
+	
+	navigator.clipboard.write(clipboardContent).then(function() {
+	  console.log("Copied to clipboard successfully!");
+	}, function() {
+	  console.error("Unable to write to clipboard. :-(");
+	});
 }

@@ -168,5 +168,10 @@ main#email-signature {
 	margin-left: $container-padding * 2;
   }
   
+  textarea {
+	  font-size: 10pt;
+	  font-family: $font-family-monospace;
+  }
+  
 
 }

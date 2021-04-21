@@ -42,14 +42,14 @@ layout: global/default
 				<p class="legend">Which email signature format do you want to use?</p>
 				
 				<div class="radio-input">
-					<input type="radio" name="sig-format" id="sig-format-default" value="default" checked>
+					<input onclick="generatePreview()" type="radio" name="sig-format" id="sig-format-default" value="default" checked>
 					<label for="sig-format-default">
 						Default
 					</label>
 				</div>
 				
 				<div class="radio-input">
-					<input type="radio" name="sig-format" id="sig-format-PrideOn2021" value="PrideOn2021">
+					<input onclick="generatePreview()" type="radio" name="sig-format" id="sig-format-PrideOn2021" value="PrideOn2021">
 					<label for="sig-format-PrideOn2021">
 						Pride On 2021
 					</label>
@@ -69,22 +69,22 @@ layout: global/default
 					
 					<div class="text-input">
 						<label for="sig-name">Your name</label>
-						<input id="sig-name" name="sig-name" type="text" placeholder="Joan Doe">
+						<input id="sig-name" name="sig-name" type="text" placeholder="Joan Doe" onfocusout="generatePreview();">
 					</div>
 					
 					<div class="text-input">
 						<label for="sig-role">Your role</label>
-						<input id="sig-role" name="sig-role" type="text" placeholder="Volunteer">
+						<input id="sig-role" name="sig-role" type="text" placeholder="Volunteer" onfocusout="generatePreview();">
 					</div>
 					
 					<div class="text-input">
 						<label for="sig-number">Your phone number</label>
-						<input id="sig-number" name="sig-number" type="text" placeholder="07000 100 200">
+						<input id="sig-number" name="sig-number" type="text" placeholder="07000 100 200" onfocusout="generatePreview();">
 					</div>
 					
 					<div class="text-input">
 						<label for="sig-email">Your email</label>
-						<input id="sig-email" name="sig-email" type="email" placeholder="info@civilservice.lgbt" value="info@civilservice.lgbt">
+						<input id="sig-email" name="sig-email" type="email" placeholder="info@civilservice.lgbt" value="info@civilservice.lgbt" onfocusout="generatePreview();">
 					</div>
 					
 				</details>
@@ -102,14 +102,14 @@ layout: global/default
 					<p class="label-hint">Some email clients support “parsed” email signatures and some require you to paste plain “HTML”.</p>
 					
 					<div class="radio-input">
-						<input onchange="generatePreview()" type="radio" name="sig-output" id="sig-output-parsed" value="parsed" checked>
+						<input onclick="generatePreview()" type="radio" name="sig-output" id="sig-output-parsed" value="parsed" checked>
 						<label for="sig-output-parsed">
 							Parsed
 						</label>
 					</div>
 					
 					<div class="radio-input">
-						<input onchange="generatePreview()" type="radio" name="sig-output" id="sig-output-html" value="html">
+						<input onclick="generatePreview()" type="radio" name="sig-output" id="sig-output-html" value="html">
 						<label for="sig-output-html">
 							Plain HTML
 						</label>
@@ -142,13 +142,13 @@ layout: global/default
 		
 		<h2>Preview</h2>
 		
-		<div id="parsed-output">
+		<div id="email-signature-block">
 		
 			{% include signatures/default.html %}
 		
 		</div>
 		
-		<textarea id="html-output" rows="10">
+		<textarea id="html-output" rows="10" wrap="soft">
 			
 		</textarea>
 	</div>
