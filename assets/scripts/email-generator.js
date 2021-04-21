@@ -29,7 +29,7 @@ function SignatureDefault(name, role, phone, email) {
 	var emailaddress = email;
 	
 	// Generate the signature
-	var signature = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><HTML><HEAD><TITLE>Civil Serivce LGBT+ Network – Email signature</TITLE><META content="text/html; charset=utf-8" http-equiv="Content-Type"></HEAD><BODY style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+	var signature = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><HTML><HEAD><META content="text/html; charset=utf-8" http-equiv="Content-Type"></HEAD><BODY style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
 			
 	<table style="font-size:12pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:18pt; width:480px;" width="480" cellpadding="0" cellspacing="0" border="0">
 	<tbody>`;
@@ -130,7 +130,7 @@ function SignaturePrideOn(name, role, phone, email) {
 	var emailaddress = email;
 	
 	// Generate the signature
-	var signature = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><HTML><HEAD><TITLE>Civil Serivce LGBT+ Network – Email signature</TITLE><META content="text/html; charset=utf-8" http-equiv="Content-Type"></HEAD><BODY style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+	var signature = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><HTML><HEAD><META content="text/html; charset=utf-8" http-equiv="Content-Type"></HEAD><BODY style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
 			
 	<table style="font-size:12pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:18pt; width:480px;" width="480" cellpadding="0" cellspacing="0" border="0">
 	<tbody>`;
@@ -269,6 +269,9 @@ function copyToClip(str) {
 };
 
 function copySignature() {
+	// Generate preview
+	generatePreview()
+	
 	// Check the output format
 	var sigOutput = getRadios('sig-output');
 	
