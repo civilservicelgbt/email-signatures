@@ -613,4 +613,6 @@ main#email-signature details > summary:active span.date { color: #ffffff; }
 
 main#email-signature details > details { margin-left: 30px; }
 
+main#email-signature textarea { font-size: 10pt; font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
 /*# sourceMappingURL=styles.css.map */
