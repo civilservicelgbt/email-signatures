@@ -65,6 +65,7 @@ header-menu--subdomain-title: true
 header-menu--subdomain-title--display-text: Email signature maker 
 
 # Header menu links
+header-menu--links--hidden: true
 header-menu--links:
   - display-text: "Home"
     alt-text: "Visit the home page"
