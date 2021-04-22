@@ -165,7 +165,7 @@ function SignaturePrideOn(name, role, phone, email) {
 
 				<!-- Phone -->
 				<span style="display: block; float: left; width: 5ch;  color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>tel</strong></span>
-				<span style="display: block; float: left; width: 5ch; color:#1d1d1d; text-align: left; vertical-align: middle;">`
+				<span style="display: block; float: left; color:#1d1d1d; text-align: left; vertical-align: middle;">`
 			
 	signature += phonenumber;
 	
