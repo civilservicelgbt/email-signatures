@@ -471,7 +471,7 @@ function getCollection() {
   return postCollection;
 }
 
-function createGitHubURL() {
+function createGitHubPostURL() {
   var postCollection = getCollection();
   var postURL = "/new//" + postCollection;
   
@@ -501,12 +501,12 @@ function getPermalink() {
 // ========================== //
 
 function openGitHub() {
-  var postURL = createGitHubURL();
+  var postURL = createGitHubPostURL();
   var GitHubWindow = window.GitHub = window.open(postURL, "GitHub");
 }
 
 function focusGitHub() {
-  var postURL = createGitHubURL();
+  var postURL = createGitHubPostURL();
   if (!window.GitHub || window.GitHub.closed) {
       window.GitHub = window.open(postURL, "GitHub");
   }
@@ -523,6 +523,11 @@ function testPermalink() {
 // ========================== //
 // ADMIN: COPY TEXT FUNCS
 // ========================== //
+
+function copyURL(url){
+  var copiedText = url;
+  navigator.clipboard.writeText(copiedText);
+}
 
 function copyPostContentToClipboard(){
   var textToCopy = generateJekyllPostContent();
