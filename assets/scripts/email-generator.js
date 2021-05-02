@@ -31,14 +31,14 @@ function SignatureDefault(name, role, phone, email) {
 	// Generate the signature
 	var signature = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><HTML><HEAD><META content="text/html; charset=utf-8" http-equiv="Content-Type"></HEAD><BODY style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
 			
-	<table style="font-size:12pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:18pt; width:480px;" width="480" cellpadding="0" cellspacing="0" border="0">
+	<table style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:14pt; width:480px;" width="480" cellpadding="0" cellspacing="0" border="0">
 	<tbody>`;
 	
 	signature += `
 		<tr>
 			
 			<td width="240" style="background-color:#ededed; padding:10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="top">
-				<span style="font-size: 14pt; color:#e6007e;"><strong>`
+				<span style="font-size: 12pt; color:#e6007e;"><strong>`
 	
 	signature += yourname;
 	
@@ -51,7 +51,7 @@ function SignatureDefault(name, role, phone, email) {
 	signature += `</span>
 			</td>
 			
-			<td width="240" style="background-color:#e6007e; padding:12px 10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1; line-height: 15pt;" valign="top">
+			<td width="240" style="background-color:#e6007e; padding:12px 10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1; line-height: 13pt;" valign="top">
 				<span style=""><strong>Civil Service<br>LGBT+ Network</strong></span>
 			</td>
 			
@@ -59,7 +59,7 @@ function SignatureDefault(name, role, phone, email) {
 		
 		<tr>
 			
-			<td width="240" style="background-color:#ededed; padding:10px; width:240px; vertical-align:bottom; line-height: 18pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="bottom">
+			<td width="240" style="background-color:#ededed; padding:10px; width:240px; vertical-align:bottom; line-height: 16pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="bottom">
 
 				<!-- Phone -->
 				<span style="display: block; float: left; width: 5ch;  color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>tel</strong></span>
@@ -103,7 +103,7 @@ function SignatureDefault(name, role, phone, email) {
 				
 			</td>
 			
-			<td width="240" style="line-height: 15pt; font-size: 11pt; background-color:#e6007e; padding:10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1;" valign="bottom">
+			<td width="240" style="line-height: 13pt; font-size: 11pt; background-color:#e6007e; padding:10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1;" valign="bottom">
 				<strong>We're helping to create a more diverse, inclusive and equal place to work for lesbian, gay, bisexual and trans civil servants.</strong>
 				<br>
 				<br>
@@ -133,14 +133,14 @@ function SignaturePrideOn(name, role, phone, email) {
 	// Generate the signature
 	var signature = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><HTML><HEAD><META content="text/html; charset=utf-8" http-equiv="Content-Type"></HEAD><BODY style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
 			
-	<table style="font-size:12pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:18pt; width:480px;" width="480" cellpadding="0" cellspacing="0" border="0">
+	<table style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:14pt; width:480px;" width="480" cellpadding="0" cellspacing="0" border="0">
 	<tbody>`;
 	
 	signature += `
 		<tr>
 			
 			<td width="240" style="background-color:#ededed; padding:10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="top">
-				<span style="font-size: 14pt; color:#e6007e;"><strong>`
+				<span style="font-size: 12pt; color:#e6007e;"><strong>`
 	
 	signature += yourname;
 	
@@ -153,7 +153,7 @@ function SignaturePrideOn(name, role, phone, email) {
 	signature += `</span>
 			</td>
 			
-			<td width="240" style="background-color:#e6007e; padding:12px 10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1; line-height: 15pt;" valign="top">
+			<td width="240" style="background-color:#e6007e; padding:12px 10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1; line-height: 13pt;" valign="top">
 				<span style=""><strong>Civil Service<br>LGBT+ Network</strong></span>
 			</td>
 			
@@ -161,7 +161,7 @@ function SignaturePrideOn(name, role, phone, email) {
 		
 		<tr>
 			
-			<td rowspan="2" width="240" style="background-color:#ededed; padding:10px; width:240px; vertical-align:bottom; line-height: 18pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="bottom">
+			<td rowspan="2" width="240" style="background-color:#ededed; padding:10px; width:240px; vertical-align:bottom; line-height: 16pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="bottom">
 
 				<!-- Phone -->
 				<span style="display: block; float: left; width: 5ch;  color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>tel</strong></span>
@@ -213,7 +213,7 @@ function SignaturePrideOn(name, role, phone, email) {
 	
 		<tr>
 			
-			<td width="240" style="line-height: 15pt; background-color:#e6007e; padding:10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1;" valign="bottom">
+			<td width="240" style="line-height: 13pt; background-color:#e6007e; padding:10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1;" valign="bottom">
 				<strong>We're keeping Pride On</strong>
 				<br>
 				<span>Get involved at</span>

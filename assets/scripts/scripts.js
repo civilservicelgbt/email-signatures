@@ -217,7 +217,7 @@ function generateJekyllPostContent() {
     jekyllpost += "author-url: \"" + postAuthorURL + "\"\n";
   }
   if (postCategories != "") {
-    jekyllpost += "categories: \[" + postCategories + "\]\n";
+    jekyllpost += "category: \[" + postCategories + "\]\n";
   }
   if (postImageURL != "") {
     jekyllpost += "image: \"" + postImageURL + "\"\n";
@@ -471,13 +471,6 @@ function getCollection() {
   return postCollection;
 }
 
-function createGitHubPostURL() {
-  var postCollection = getCollection();
-  var postURL = "/new//" + postCollection;
-  
-  return postURL;
-}
-
 // ========================== //
 // ADMIN: SHOW OUTPUTS
 // ========================== //
@@ -500,6 +493,20 @@ function getPermalink() {
 // ADMIN: OPEN / FOCUS GITHUB 
 // ========================== //
 
+
+function createGitHubPostURL() {
+  var postCollection = getCollection();
+  var postURL = "/new//" + postCollection;
+  if (postCollection == "_events") {
+    var postEventDateYear = document.getElementById("post-event-date-year").value;
+    var postEventDateMonth = document.getElementById("post-event-date-month").value;
+    var postEventDateDay = document.getElementById("post-event-date-day").value;
+    var postEventDate = "/" + postEventDateYear + "/" + postEventDateMonth + "/" +  postEventDateDay;
+    postURL += postEventDate ;  
+  }
+  return postURL;
+}
+
 function openGitHub() {
   var postURL = createGitHubPostURL();
   var GitHubWindow = window.GitHub = window.open(postURL, "GitHub");
@@ -519,10 +526,44 @@ function testPermalink() {
   var postWindow = window.open(postURL, "Civil Service LGBT+ Network");
 }
 
+function createGitHubDirectory(id, repo, rootdir) {
+  
+  // URL needs to be in this format:
+  // https://github.com/civilservicelgbt/REPO/upload/main/ROOT-DIRECTORY
+  
+  var id = id;
+  var repo = repo;
+  var dir = rootdir;
+  
+  var field = document.getElementById(id)
+  var fieldvalue = field.value;
+  if (fieldvalue == "") {
+    var fieldvalue = "/";
+  } else {
+    var fieldvalue = '/' + field.value;
+  }
+  var postURL = '' + '/' + repo + '/upload/main/' + dir + fieldvalue;
+  var GitHubWindow = window.GitHub = window.open(postURL, "GitHub – New file in folder");
+}
 
 // ========================== //
 // ADMIN: COPY TEXT FUNCS
 // ========================== //
+
+function cleanFieldInput(id) {
+  var field = document.getElementById(id)
+  var fieldvalue = field.value;
+  var clean = fieldvalue.replace(/([^a-z0-9]+)/gi, '-');
+  var clean = clean.toLowerCase();
+  console.log("Input “" + fieldvalue + "” cleaned to “" + clean + "”" )
+  field.value = clean;
+}
+
+function copyFieldInput(id) {
+  var field = document.getElementById(id)
+  var fieldvalue = field.value;
+  navigator.clipboard.writeText(fieldvalue);
+}
 
 function copyURL(url){
   var copiedText = url;
