@@ -51,7 +51,7 @@ function SignatureDefault(name, role, phone, email) {
 	signature += `</span>
 			</td>
 			
-			<td width="240" style="background-color:#e6007e; padding:12px 10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1; line-height: 13pt;" valign="top">
+			<td width="240" style="background-color:#e6007e; padding:12px 10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1; line-height: 11pt;" valign="top">
 				<span style=""><strong>Civil Service<br>LGBT+ Network</strong></span>
 			</td>
 			
@@ -103,7 +103,7 @@ function SignatureDefault(name, role, phone, email) {
 				
 			</td>
 			
-			<td width="240" style="line-height: 13pt; font-size: 11pt; background-color:#e6007e; padding:10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1;" valign="bottom">
+			<td width="240" style="line-height: 11pt; font-size: 10pt; background-color:#e6007e; padding:10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1;" valign="bottom">
 				<strong>We're helping to create a more diverse, inclusive and equal place to work for lesbian, gay, bisexual and trans civil servants.</strong>
 				<br>
 				<br>
@@ -153,7 +153,7 @@ function SignaturePrideOn(name, role, phone, email) {
 	signature += `</span>
 			</td>
 			
-			<td width="240" style="background-color:#e6007e; padding:12px 10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1; line-height: 13pt;" valign="top">
+			<td width="240" style="background-color:#e6007e; padding:12px 10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1; line-height: 11pt;" valign="top">
 				<span style=""><strong>Civil Service<br>LGBT+ Network</strong></span>
 			</td>
 			
@@ -213,7 +213,7 @@ function SignaturePrideOn(name, role, phone, email) {
 	
 		<tr>
 			
-			<td width="240" style="line-height: 13pt; background-color:#e6007e; padding:10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1;" valign="bottom">
+			<td width="240" style="line-height: 11pt; background-color:#e6007e; padding:10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1;" valign="bottom">
 				<strong>We're keeping Pride On</strong>
 				<br>
 				<span>Get involved at</span>
