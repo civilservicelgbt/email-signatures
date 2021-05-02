@@ -122,6 +122,71 @@ function SignatureDefault(name, role, phone, email) {
 	
 }
 
+function SignatureDefaultWide(name, role, phone) {
+	
+	// Get fields
+	var yourname = name;
+	var yourrole = role;
+	var phonenumber = phone;
+	
+	// Generate the signature
+	var signature = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+	<HTML><HEAD><META content="text/html; charset=utf-8" http-equiv="Content-Type"></HEAD><BODY style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+	<table style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:16pt; width:480px;" width="480" cellpadding="0" cellspacing="0" border="0">
+	 <tbody>
+		 
+		<tr width="480">
+			
+			<td style="background-color:#ededed; padding:10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="top">
+				
+				<span style="font-size: 12pt; color:#e6007e;"><strong>`;
+	
+	signature += yourname;
+	
+	signature += `</strong></span>
+	<br>
+	<span style="color:#1d1d1d;">`;
+	
+	signature += yourrole;
+	
+	signature += `</span>
+	</td>
+	
+	<td style="background-color:#ededed; padding:10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="top">
+		<!-- Phone -->
+		<span style="display: block; float: left; width: 5ch;  color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>tel</strong></span>
+		<span style="color:#1d1d1d; text-align: left; vertical-align: middle;">`;
+	
+	signature += phonenumber;
+	
+	signature += `</span>
+	
+	<br>
+	<!-- Website -->
+	<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>www</strong></span>
+	<span style="color:#1d1d1d;"><a href="//www.civilservice.lgbt" target="_blank" rel="noopener" style="color: #1d1d1d">www.civilservice.lgbt</a></span>
+	
+</td>
+
+</tr>
+
+<tr width="480">
+
+<td width="480" colspan="2" style="line-height: 12pt; font-size: 12pt; background-color:#e6007e; padding:10px; width:480px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1" valign="bottom">
+	<span style="display:block; font-size: 12pt; line-height: 16pt; color:#ffed00; padding-bottom: 3pt;"><strong>Civil Service LGBT+ Network</strong></span>
+	<span style="display:block; font-size: 10pt; line-height: 12pt; width: 80%;">We're helping to create a more diverse, inclusive and equal place to work for lesbian, gay, bisexual and trans civil servants.</span>
+</td>
+</tr>
+
+</tbody>
+</table>
+</BODY>
+</HTML>`;
+
+	return signature;
+	
+}
+
 function SignaturePrideOn(name, role, phone, email) {
 	
 	// Get fields
@@ -206,7 +271,7 @@ function SignaturePrideOn(name, role, phone, email) {
 			</td>
 			
 			<td width="240" style="background-color:#e6007e; padding:20px 10px 0px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1;" valign="top">
-				<a href="http://www.civilservice.lgbt/pride-on" target="_blank" rel="noopener"><img border="0" alt="banner" width="200" style="width:200px; height:auto; border:0;" src="https://www.civilservice.lgbt/email-signatures/assets/images/pride-2021.png"></a> 
+				<a href="http://www.civilservice.lgbt/pride" target="_blank" rel="noopener"><img border="0" alt="banner" width="200" style="width:200px; height:auto; border:0;" src="https://www.civilservice.lgbt/email-signatures/assets/images/pride-2021.png"></a> 
 			</td>
 			
 		</tr>
@@ -231,6 +296,76 @@ function SignaturePrideOn(name, role, phone, email) {
 	
 }
 
+function SignaturePrideOnWide(name, role, phone) {
+	
+	// Get fields
+	var yourname = name;
+	var yourrole = role;
+	var phonenumber = phone;
+	
+	// Generate the signature
+	var signature = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+	<HTML><HEAD><META content="text/html; charset=utf-8" http-equiv="Content-Type"></HEAD><BODY style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+	<table style="font-size:10pt; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:16pt; width:480px;" width="480" cellpadding="0" cellspacing="0" border="0">
+	 <tbody>
+		 
+		<tr width="480">
+			
+			<td style="background-color:#ededed; padding:10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="top">
+				
+				<span style="font-size: 12pt; color:#e6007e;"><strong>`;
+	
+	signature += yourname;
+	
+	signature += `</strong></span>
+	<br>
+	<span style="color:#1d1d1d;">`;
+	
+	signature += yourrole;
+	
+	signature += `</span>
+	</td>
+	
+	<td style="background-color:#ededed; padding:10px; width:240px; vertical-align:top; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;" valign="top">
+		<!-- Phone -->
+		<span style="display: block; float: left; width: 5ch;  color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>tel</strong></span>
+		<span style="color:#1d1d1d; text-align: left; vertical-align: middle;">`;
+	
+	signature += phonenumber;
+	
+	signature += `</span>
+	
+	<br>
+	<!-- Website -->
+	<span style="display: block; float: left; width: 5ch; color:#e6007e; margin-right: 10px; text-align: left; vertical-align: middle;"><strong>www</strong></span>
+	<span style="color:#1d1d1d;"><a href="//www.civilservice.lgbt" target="_blank" rel="noopener" style="color: #1d1d1d">www.civilservice.lgbt</a></span>
+	
+</td>
+
+</tr>
+
+<tr width="480">
+
+<td width="240" style="line-height: 12pt; font-size: 12pt; background-color:#e6007e; padding:15px 10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1" valign="bottom">
+	<a href="http://www.civilservice.lgbt/pride" target="_blank" rel="noopener"><img border="0" alt="banner" width="200" style="width:200px; height:auto; border:0; margin: 0;" src="https://www.civilservice.lgbt/email-signatures/assets/images/pride-2021.png"></a> 
+</td>
+
+<td width="240" style="line-height: 12pt; font-size: 12pt; background-color:#e6007e; padding:10px; width:240px; vertical-align:bottom; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#f1f1f1" valign="bottom">
+	<span style="display:block; font-size: 12pt; line-height: 16pt; color:#f1f1f1; padding-bottom: 3pt;"><strong>We're keeping Pride On</strong></span>
+	<span style="display:block; font-size: 12pt; line-height: 16pt; color:#f1f1f1;">Get involved at</span>
+	<span style="display:block; font-size: 12pt; line-height: 16pt; color:#f1f1f1; padding-bottom: 3pt;"><strong><a href="https://www.civilservice.lgbt/pride" style="display: inline-block; text-decoration: none; line-height: 10pt; cursor: pointer; color:#ffed00;" target="_blank" rel="noopener">www.civilservice.lgbt/pride</a></strong></span>
+</td>
+</tr>
+
+</tbody>
+</table>
+</BODY>
+</HTML>`;
+
+	return signature;
+	
+}
+
 
 
 function generatePreview() {
@@ -247,8 +382,17 @@ function generatePreview() {
 	if (format == "default") {
 		var signature = SignatureDefault(yourname, yourrole, phonenumber, emailaddress);
 	}
+	
+	if (format == "default-wide") {
+		var signature = SignatureDefaultWide(yourname, yourrole, phonenumber);
+	}
+	
 	if (format == "PrideOn2021") {
 		var signature = SignaturePrideOn(yourname, yourrole, phonenumber, emailaddress);
+	}
+	
+	if (format == "PrideOn2021-wide") {
+		var signature = SignaturePrideOnWide(yourname, yourrole, phonenumber);
 	}
 	
 	// Update the preview
