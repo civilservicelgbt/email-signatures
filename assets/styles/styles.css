@@ -552,69 +552,69 @@ main#page tr td:nth-child(2) h2, main#format-page tr td:nth-child(2) h2 { paddin
 
 main#page tr td img, main#format-page tr td img { margin-top: 10px; max-width: 150px !important; }
 
-main#email-signature { padding: 45px 0; }
+main[id*="email-signature-"] { padding: 45px 0; }
 
-@supports (display: grid) { main#email-signature { display: grid; grid-template-rows: auto auto auto auto auto; grid-template-columns: 1fr; grid-template-areas: "page-title" "page-lead-paragraph" "page-help" "page-content" "signature-preview"; }
-  @media only screen and (min-width: 768px) { main#email-signature { grid-template-rows: auto auto auto auto auto; grid-template-columns: 1fr auto; grid-column-gap: 30px; grid-template-areas: "page-title page-title" "page-lead-paragraph ." "page-help page-help" "page-content signature-preview"; } } }
+@supports (display: grid) { main[id*="email-signature-"] { display: grid; grid-template-rows: auto auto auto auto auto; grid-template-columns: 1fr; grid-template-areas: "page-title" "page-lead-paragraph" "page-help" "page-content" "signature-preview"; }
+  @media only screen and (min-width: 768px) { main[id*="email-signature-"] { grid-template-rows: auto auto auto auto auto; grid-template-columns: 1fr 1fr 1fr 1fr; grid-column-gap: 30px; grid-template-areas: "page-title page-title page-title ." "page-lead-paragraph page-lead-paragraph page-lead-paragraph ." "page-help page-help page-help ." "page-content page-content signature-preview signature-preview"; } } }
 
-main#email-signature::after { content: ""; clear: both; display: table; }
+main[id*="email-signature-"]::after { content: ""; clear: both; display: table; }
 
-main#email-signature div#page-title { margin-top: 45px; margin-bottom: 45px; }
+main[id*="email-signature-"] div#page-title { margin-top: 45px; margin-bottom: 45px; }
 
-@supports (display: grid) { main#email-signature div#page-title { grid-area: page-title; } }
+@supports (display: grid) { main[id*="email-signature-"] div#page-title { grid-area: page-title; } }
 
-main#email-signature div#page-title h1.page-title { margin: 0; padding: 0; }
+main[id*="email-signature-"] div#page-title h1.page-title { margin: 0; padding: 0; }
 
-@supports (display: grid) { main#email-signature div#signature-preview { grid-area: signature-preview; } }
+@supports (display: grid) { main[id*="email-signature-"] div#signature-preview { grid-area: signature-preview; } }
 
-main#email-signature div#page-lead-paragraph { margin-bottom: 45px; }
+main[id*="email-signature-"] div#page-lead-paragraph { margin-bottom: 45px; }
 
-@supports (display: grid) { main#email-signature div#page-lead-paragraph { grid-area: page-lead-paragraph; } }
+@supports (display: grid) { main[id*="email-signature-"] div#page-lead-paragraph { grid-area: page-lead-paragraph; } }
 
-main#email-signature div#page-lead-paragraph p:first-child, main#email-signature div#page-lead-paragraph .text-input:first-child, main#email-signature div#page-lead-paragraph .radio-input:first-child, main#email-signature div#page-lead-paragraph .checkbox-input:first-child, main#email-signature div#page-lead-paragraph label:first-child, main#email-signature div#page-lead-paragraph .label:first-child, main#email-signature div#page-lead-paragraph .label-hint:first-child, main#email-signature div#page-lead-paragraph input[type="text"]:first-child, main#email-signature div#page-lead-paragraph input[type="email"]:first-child, main#email-signature div#page-lead-paragraph textarea:first-child { font-size: 24px; }
+main[id*="email-signature-"] div#page-lead-paragraph p:first-child, main[id*="email-signature-"] div#page-lead-paragraph .text-input:first-child, main[id*="email-signature-"] div#page-lead-paragraph .radio-input:first-child, main[id*="email-signature-"] div#page-lead-paragraph .checkbox-input:first-child, main[id*="email-signature-"] div#page-lead-paragraph label:first-child, main[id*="email-signature-"] div#page-lead-paragraph .label:first-child, main[id*="email-signature-"] div#page-lead-paragraph .label-hint:first-child, main[id*="email-signature-"] div#page-lead-paragraph input[type="text"]:first-child, main[id*="email-signature-"] div#page-lead-paragraph input[type="email"]:first-child, main[id*="email-signature-"] div#page-lead-paragraph textarea:first-child { font-size: 24px; }
 
-main#email-signature div#page-help { margin-bottom: 45px; }
+main[id*="email-signature-"] div#page-help { margin-bottom: 45px; }
 
-@supports (display: grid) { main#email-signature div#page-help { grid-area: page-help; } }
+@supports (display: grid) { main[id*="email-signature-"] div#page-help { grid-area: page-help; } }
 
-main#email-signature div#page-help ul li, main#email-signature div#page-help ol li { padding-bottom: 7.5px; }
+main[id*="email-signature-"] div#page-help ul li, main[id*="email-signature-"] div#page-help ol li { padding-bottom: 7.5px; }
 
-main#email-signature div#page-content { margin-bottom: 45px; padding-top: 0; }
+main[id*="email-signature-"] div#page-content { margin-bottom: 45px; padding-top: 0; }
 
-@media only screen and (min-width: 768px) { main#email-signature div#page-content { width: 67%; float: left; clear: left; } }
+@media only screen and (min-width: 768px) { main[id*="email-signature-"] div#page-content { width: 67%; float: left; clear: left; } }
 
-@supports (display: grid) { main#email-signature div#page-content { width: 100%; float: none; clear: none; grid-area: page-content; } }
+@supports (display: grid) { main[id*="email-signature-"] div#page-content { width: 100%; float: none; clear: none; grid-area: page-content; } }
 
-main#email-signature div#page-content button, main#email-signature div#page-content a.button { margin-bottom: 0; margin-right: 15px; padding: 7.5px 30px; }
+main[id*="email-signature-"] div#page-content button, main[id*="email-signature-"] div#page-content a.button { margin-bottom: 0; margin-right: 15px; padding: 7.5px 30px; }
 
-main#email-signature div#page-content button + label, main#email-signature div#page-content button + p, main#email-signature div#page-content button + .text-input, main#email-signature div#page-content button + .radio-input, main#email-signature div#page-content button + .checkbox-input, main#email-signature div#page-content button + .label, main#email-signature div#page-content button + .label-hint, main#email-signature div#page-content button + input[type="text"], main#email-signature div#page-content button + input[type="email"], main#email-signature div#page-content button + textarea { margin-top: 30px; }
+main[id*="email-signature-"] div#page-content button + label, main[id*="email-signature-"] div#page-content button + p, main[id*="email-signature-"] div#page-content button + .text-input, main[id*="email-signature-"] div#page-content button + .radio-input, main[id*="email-signature-"] div#page-content button + .checkbox-input, main[id*="email-signature-"] div#page-content button + .label, main[id*="email-signature-"] div#page-content button + .label-hint, main[id*="email-signature-"] div#page-content button + input[type="text"], main[id*="email-signature-"] div#page-content button + input[type="email"], main[id*="email-signature-"] div#page-content button + textarea { margin-top: 30px; }
 
-main#email-signature div#page-content span.optional { color: #6F777B; font-weight: normal; font-style: italic; margin-left: 15px; }
+main[id*="email-signature-"] div#page-content span.optional { color: #6F777B; font-weight: normal; font-style: italic; margin-left: 15px; }
 
-main#email-signature div#post-buttons { padding-top: 15px; border-top: 2px solid #DEE0E2; }
+main[id*="email-signature-"] div#post-buttons { padding-top: 15px; border-top: 2px solid #DEE0E2; }
 
-main#email-signature div#post-buttons p::after, main#email-signature div#post-buttons .text-input::after, main#email-signature div#post-buttons .radio-input::after, main#email-signature div#post-buttons .checkbox-input::after, main#email-signature div#post-buttons label::after, main#email-signature div#post-buttons .label::after, main#email-signature div#post-buttons .label-hint::after, main#email-signature div#post-buttons input[type="text"]::after, main#email-signature div#post-buttons input[type="email"]::after, main#email-signature div#post-buttons textarea::after { content: ""; clear: both; display: table; }
+main[id*="email-signature-"] div#post-buttons p::after, main[id*="email-signature-"] div#post-buttons .text-input::after, main[id*="email-signature-"] div#post-buttons .radio-input::after, main[id*="email-signature-"] div#post-buttons .checkbox-input::after, main[id*="email-signature-"] div#post-buttons label::after, main[id*="email-signature-"] div#post-buttons .label::after, main[id*="email-signature-"] div#post-buttons .label-hint::after, main[id*="email-signature-"] div#post-buttons input[type="text"]::after, main[id*="email-signature-"] div#post-buttons input[type="email"]::after, main[id*="email-signature-"] div#post-buttons textarea::after { content: ""; clear: both; display: table; }
 
-main#email-signature details.collection--posts--item { padding: 7.5px; border-top: 1px solid #DEE0E2; }
+main[id*="email-signature-"] details.collection--posts--item { padding: 7.5px; border-top: 1px solid #DEE0E2; }
 
-main#email-signature details.collection--posts--item:first-of-type { border: none; }
+main[id*="email-signature-"] details.collection--posts--item:first-of-type { border: none; }
 
-main#email-signature summary.collection--label { text-transform: capitalize; }
+main[id*="email-signature-"] summary.collection--label { text-transform: capitalize; }
 
-main#email-signature summary.collection--posts--item--label { display: block; text-transform: capitalize; font-weight: normal; max-width: 100%; }
+main[id*="email-signature-"] summary.collection--posts--item--label { display: block; text-transform: capitalize; font-weight: normal; max-width: 100%; }
 
-main#email-signature summary.collection--posts--item--label header { display: inline-block; width: calc(100% - (15px * 2)); }
+main[id*="email-signature-"] summary.collection--posts--item--label header { display: inline-block; width: calc(100% - (15px * 2)); }
 
-main#email-signature summary.collection--posts--item--label span.title { display: block; max-width: 50ch; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+main[id*="email-signature-"] summary.collection--posts--item--label span.title { display: block; max-width: 50ch; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-main#email-signature summary.collection--posts--item--label span.date { color: #6F777B; }
+main[id*="email-signature-"] summary.collection--posts--item--label span.date { color: #6F777B; }
 
-main#email-signature details > summary:hover span.date { color: inherit; }
+main[id*="email-signature-"] details > summary:hover span.date { color: inherit; }
 
-main#email-signature details > summary:active span.date { color: #ffffff; }
+main[id*="email-signature-"] details > summary:active span.date { color: #ffffff; }
 
-main#email-signature details > details { margin-left: 30px; }
+main[id*="email-signature-"] details > details { margin-left: 30px; }
 
-main#email-signature textarea { font-size: 10pt; font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+main[id*="email-signature-"] textarea { font-size: 10pt; font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 /*# sourceMappingURL=styles.css.map */
