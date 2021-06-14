@@ -16,7 +16,7 @@ organisation: "Civil Service LGBT+ Network"
 email: "info@civilservice.lgbt"
 
 baseurl: "/email-signatures" # the subpath of your site, e.g. /blog
-url: "https://www.civilservice.lgbt"
+url: "http://localhost:4000"
 
 #########################
 # Social media accounts #
@@ -62,7 +62,7 @@ header-menu--title--display-text: "Civil Service LGBT+"
 # - `header-menu--subdomain-title` to 'true'
 # - `header-menu--subdomain-title--display-text` to any string value (i.e. "Image maker")
 header-menu--subdomain-title: true
-header-menu--subdomain-title--display-text: Email signature maker 
+header-menu--subdomain-title--display-text: Email signature maker
 
 # Header menu links
 header-menu--links--hidden: true
@@ -127,7 +127,7 @@ google-analytics-domain: ".www.civilservice.lgbt"
 # Collections #
 ###############
 #This is the default permalink for the "_posts" folder.
-permalink: /:year/:month/:day/:title:output_ext 
+permalink: /:year/:month/:day/:title:output_ext
 
 collections:
   pages:
@@ -136,7 +136,7 @@ collections:
     defaults:
       values:
         layout: page
-        
+
 ##################
 # Build settings #
 ##################
@@ -154,7 +154,7 @@ plugins:
 - jekyll-feed
 - jekyll-redirect-from
 
-    
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

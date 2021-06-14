@@ -1,6 +1,6 @@
 // Page styles
 
-main#email-signature {
+main[id*="email-signature-"] {
   @supports (display: grid) {
 	display: grid;
 	grid-template-rows: auto auto auto auto auto;
@@ -14,13 +14,13 @@ main#email-signature {
 
 	@include md-up {
 	  grid-template-rows: auto auto auto auto auto;
-	  grid-template-columns: 1fr auto;
+	  grid-template-columns: 1fr 1fr 1fr 1fr;
 	  grid-column-gap: 30px;
 	  grid-template-areas:
-		"page-title page-title"
-		"page-lead-paragraph ."
-		"page-help page-help"
-		"page-content signature-preview";
+		"page-title page-title page-title ."
+		"page-lead-paragraph page-lead-paragraph page-lead-paragraph ."
+		"page-help page-help page-help ."
+		"page-content page-content signature-preview signature-preview";
 	}
   }
 
@@ -58,14 +58,14 @@ main#email-signature {
 	  font-size: $font-size-base + 5px;
 	}
   }
-  
+
   div#page-help {
 	@supports (display: grid) {
 	  grid-area: page-help;
 	}
 
 	margin-bottom: 45px;
-	
+
 	ul,ol {
 	  li {
 		padding-bottom: $container-padding * 0.5;
@@ -89,28 +89,28 @@ main#email-signature {
 
 	margin-bottom: 45px;
 	padding-top: 0;
-	
+
 	button,
 	a.button {
 	  margin-bottom: 0;
 	  margin-right: $container-padding;
 	  padding: ($container-padding * 0.5) ($container-padding * 2);
 	}
-	
+
 	button + label,
 	button + p {
 	  margin-top: $container-padding * 2;
 	}
-	
+
 	span.optional {
 	  color: $dark-gray;
 	  font-weight: normal;
 	  font-style: italic;
 	  margin-left: $container-padding;
 	}
-	
+
   }
-	
+
   div#post-buttons {
 	padding-top: $container-padding;
 	border-top: 2px solid $light-gray;
@@ -128,7 +128,7 @@ main#email-signature {
 	  }
 	}
   }
-  
+
   summary {
 	&.collection--label {
 	  text-transform: capitalize;
@@ -145,7 +145,7 @@ main#email-signature {
 	  span.title {
 		display: block;
 		max-width: 50ch;
-		white-space: nowrap; 
+		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	  }
@@ -154,24 +154,24 @@ main#email-signature {
 	  }
 	}
   }
-  
+
   details > summary:hover span.date {
 	color: inherit;
   }
-  
+
   details > summary:active span.date {
 	color: $white;
   }
-  
-  
+
+
   details > details {
 	margin-left: $container-padding * 2;
   }
-  
+
   textarea {
 	  font-size: 10pt;
 	  font-family: $font-family-monospace;
   }
-  
+
 
 }
