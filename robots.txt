@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/email-signatures/sitemap.xml
+Sitemap: https://www.civilservice.lgbt/email-signatures/sitemap.xml
