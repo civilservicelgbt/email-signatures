@@ -16,7 +16,7 @@ organisation: "Civil Service LGBT+ Network"
 email: "info@civilservice.lgbt"
 
 baseurl: "/email-signatures" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000"
+url: "https://www.civilservice.lgbt"
 
 #########################
 # Social media accounts #
