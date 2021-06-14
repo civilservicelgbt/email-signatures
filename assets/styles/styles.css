@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, main#page div#page-content div.footnotes::before, main#four-oh-four div#page-content div.footnotes::before, h5, h6, p, input[type="text"], input[type="email"], textarea, .label-hint, .label, .text-input, .radio-input, .checkbox-input, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, table tfoot, table thead, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, main#page div#page-content div.footnotes::before, main#format-page div#page-content div.footnotes::before, main#global-four-oh-four div#page-content div.footnotes::before, h5, h6, p, input[type="text"], input[type="email"], textarea, .label-hint, .label, .text-input, .radio-input, .checkbox-input, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, table tfoot, table thead, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -216,7 +216,7 @@ a:focus { color: #0B0C0C !important; background: #ffed00; outline: 3px solid #ff
 
 a:active { color: #ffffff !important; background: #e6007e; outline: 3px solid #e6007e; }
 
-h1, h2, h3, h4, main#page div#page-content div.footnotes::before, main#four-oh-four div#page-content div.footnotes::before, h5, h6 { color: #0B0C0C; }
+h1, h2, h3, h4, main#page div#page-content div.footnotes::before, main#format-page div#page-content div.footnotes::before, main#global-four-oh-four div#page-content div.footnotes::before, h5, h6 { color: #0B0C0C; }
 
 h1 { font-weight: bold; font-size: 38.4px; padding: 45px 0 30px 0; }
 
@@ -228,13 +228,13 @@ h3 { font-weight: bold; font-size: 30px; padding: 30px 0 15px 0; }
 
 h2 + h3 { padding-top: 0 !important; }
 
-h4, main#page div#page-content div.footnotes::before, main#four-oh-four div#page-content div.footnotes::before { font-weight: bold; font-size: 24px; padding: 30px 0 15px 0; }
+h4, main#page div#page-content div.footnotes::before, main#format-page div#page-content div.footnotes::before, main#global-four-oh-four div#page-content div.footnotes::before { font-weight: bold; font-size: 24px; padding: 30px 0 15px 0; }
 
-h3 + h4, main#page div#page-content h3 + div.footnotes::before, main#four-oh-four div#page-content h3 + div.footnotes::before { padding-top: 0 !important; }
+h3 + h4, main#page div#page-content h3 + div.footnotes::before, main#format-page div#page-content h3 + div.footnotes::before, main#global-four-oh-four div#page-content h3 + div.footnotes::before { padding-top: 0 !important; }
 
 h5 { font-weight: bold; font-size: 19px; padding: 10px 0; }
 
-h4 + h5, main#page div#page-content div.footnotes::before + h5, main#four-oh-four div#page-content div.footnotes::before + h5 { padding-top: 0 !important; }
+h4 + h5, main#page div#page-content div.footnotes::before + h5, main#format-page div#page-content div.footnotes::before + h5, main#global-four-oh-four div#page-content div.footnotes::before + h5 { padding-top: 0 !important; }
 
 h6 { font-weight: bold; font-size: 19px; padding: 10px 0; }
 
@@ -250,7 +250,7 @@ center { text-align: center; }
 
 li { padding-left: 10px; margin: 0; }
 
-ul, ol { padding-bottom: 9.5px; padding-left: 40px; list-style: disc; }
+ul, ol { padding-bottom: 19px; padding-left: 40px; list-style: disc; }
 
 ol { list-style: decimal; }
 
@@ -328,7 +328,7 @@ details[open] > summary:before { content: '–'; }
 
 summary { font-size: 19px; line-height: 1.35; font-weight: bold; }
 
-summary h1, summary h2, summary h3, summary h4, summary main#page div#page-content div.footnotes::before, main#page div#page-content summary div.footnotes::before, summary main#four-oh-four div#page-content div.footnotes::before, main#four-oh-four div#page-content summary div.footnotes::before, summary h5, summary h6 { display: inline-block; position: relative; font-size: 19px; line-height: 1.35; padding: 0; color: unset; width: calc(100% - (15px * 2)); }
+summary h1, summary h2, summary h3, summary h4, summary main#page div#page-content div.footnotes::before, main#page div#page-content summary div.footnotes::before, summary main#format-page div#page-content div.footnotes::before, main#format-page div#page-content summary div.footnotes::before, summary main#global-four-oh-four div#page-content div.footnotes::before, main#global-four-oh-four div#page-content summary div.footnotes::before, summary h5, summary h6 { display: inline-block; position: relative; font-size: 19px; line-height: 1.35; padding: 0; color: unset; width: calc(100% - (15px * 2)); }
 
 summary legend { display: block; position: relative; font-size: 19px; line-height: 1.35; padding: 0; color: unset; max-width: calc(100% - (15px * 2)); }
 
@@ -339,6 +339,8 @@ summary:focus { color: #0B0C0C !important; background: #ffed00; outline: 3px sol
 summary:active { color: #ffffff !important; background: #e6007e; outline: 3px solid #e6007e; }
 
 summary::after { content: ""; clear: both; display: table; }
+
+details > div.container { width: calc(100% - (15px * 2)); margin: 0 0 0 30px; padding: 0; }
 
 .radio-item { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: block; position: relative; min-height: 40px; margin-bottom: 10px; padding-left: 40px; clear: left; font-size: 19px; font-weight: normal; line-height: 1.35; }
 
@@ -468,87 +470,87 @@ input[type="radio"] ~ .label-hint { padding-right: 20px; padding-left: 20px; }
 
 input[type="radio"] ~ input[type="text"], input[type="radio"] ~ input[type="email"] { margin-left: 20px; width: calc(100% - 20px); }
 
-main#four-oh-four { padding: 45px 0; }
+main#global-four-oh-four { padding: 45px 0; }
 
-@supports (display: grid) { main#four-oh-four { display: grid; grid-template-rows: auto auto auto; grid-template-columns: 1fr; grid-template-areas: "page-title" "page-lead-paragraph" "page-content"; }
-  @media only screen and (min-width: 768px) { main#four-oh-four { grid-template-rows: auto auto auto; grid-template-columns: 2fr 1fr; grid-column-gap: 30px; grid-template-areas: "page-title ." "page-lead-paragraph ." "page-content."; } } }
+@supports (display: grid) { main#global-four-oh-four { display: grid; grid-template-rows: auto auto auto; grid-template-columns: 1fr; grid-template-areas: "page-title" "page-lead-paragraph" "page-content"; }
+  @media only screen and (min-width: 768px) { main#global-four-oh-four { grid-template-rows: auto auto auto; grid-template-columns: 2fr 1fr; grid-column-gap: 30px; grid-template-areas: "page-title ." "page-lead-paragraph ." "page-content."; } } }
 
-@supports not (display: grid) { main#four-oh-four::after { content: ""; clear: both; display: table; } }
+@supports not (display: grid) { main#global-four-oh-four::after { content: ""; clear: both; display: table; } }
 
-main#four-oh-four div#page-title { margin-top: 45px; margin-bottom: 45px; }
+main#global-four-oh-four div#page-title { margin-top: 45px; margin-bottom: 45px; }
 
-@supports (display: grid) { main#four-oh-four div#page-title { grid-area: page-title; } }
+@supports (display: grid) { main#global-four-oh-four div#page-title { grid-area: page-title; } }
 
-main#four-oh-four div#page-title h1.page-title { margin: 0; padding: 0; }
+main#global-four-oh-four div#page-title h1.page-title { margin: 0; padding: 0; }
 
-main#four-oh-four div#page-lead-paragraph { margin-bottom: 45px; }
+main#global-four-oh-four div#page-lead-paragraph { margin-bottom: 45px; }
 
-@supports (display: grid) { main#four-oh-four div#page-lead-paragraph { grid-area: page-lead-paragraph; } }
+@supports (display: grid) { main#global-four-oh-four div#page-lead-paragraph { grid-area: page-lead-paragraph; } }
 
-main#four-oh-four div#page-lead-paragraph p, main#four-oh-four div#page-lead-paragraph .text-input, main#four-oh-four div#page-lead-paragraph .radio-input, main#four-oh-four div#page-lead-paragraph .checkbox-input, main#four-oh-four div#page-lead-paragraph label, main#four-oh-four div#page-lead-paragraph .label, main#four-oh-four div#page-lead-paragraph .label-hint, main#four-oh-four div#page-lead-paragraph input[type="text"], main#four-oh-four div#page-lead-paragraph input[type="email"], main#four-oh-four div#page-lead-paragraph textarea { font-size: 24px; }
+main#global-four-oh-four div#page-lead-paragraph p, main#global-four-oh-four div#page-lead-paragraph .text-input, main#global-four-oh-four div#page-lead-paragraph .radio-input, main#global-four-oh-four div#page-lead-paragraph .checkbox-input, main#global-four-oh-four div#page-lead-paragraph label, main#global-four-oh-four div#page-lead-paragraph .label, main#global-four-oh-four div#page-lead-paragraph .label-hint, main#global-four-oh-four div#page-lead-paragraph input[type="text"], main#global-four-oh-four div#page-lead-paragraph input[type="email"], main#global-four-oh-four div#page-lead-paragraph textarea { font-size: 24px; }
 
-main#four-oh-four div#page-metadata { margin-bottom: 45px; padding-top: 15px; border-top: 2px solid #DEE0E2; }
+main#global-four-oh-four div#page-metadata { margin-bottom: 45px; padding-top: 15px; border-top: 2px solid #DEE0E2; }
 
-@supports (display: grid) { main#four-oh-four div#page-metadata { grid-area: page-metadata; } }
+@supports (display: grid) { main#global-four-oh-four div#page-metadata { grid-area: page-metadata; } }
 
-main#four-oh-four div#page-metadata p, main#four-oh-four div#page-metadata .text-input, main#four-oh-four div#page-metadata .radio-input, main#four-oh-four div#page-metadata .checkbox-input, main#four-oh-four div#page-metadata label, main#four-oh-four div#page-metadata .label, main#four-oh-four div#page-metadata .label-hint, main#four-oh-four div#page-metadata input[type="text"], main#four-oh-four div#page-metadata input[type="email"], main#four-oh-four div#page-metadata textarea { font-size: 16px; margin: 0; }
+main#global-four-oh-four div#page-metadata p, main#global-four-oh-four div#page-metadata .text-input, main#global-four-oh-four div#page-metadata .radio-input, main#global-four-oh-four div#page-metadata .checkbox-input, main#global-four-oh-four div#page-metadata label, main#global-four-oh-four div#page-metadata .label, main#global-four-oh-four div#page-metadata .label-hint, main#global-four-oh-four div#page-metadata input[type="text"], main#global-four-oh-four div#page-metadata input[type="email"], main#global-four-oh-four div#page-metadata textarea { font-size: 16px; margin: 0; }
 
-main#four-oh-four div#page-content { margin-bottom: 45px; padding-top: 15px; border-top: 2px solid #DEE0E2; }
+main#global-four-oh-four div#page-content { margin-bottom: 45px; padding-top: 15px; border-top: 2px solid #DEE0E2; }
 
-@supports not (display: grid) { @media only screen and (min-width: 768px) { main#four-oh-four div#page-content { width: 67%; float: left; clear: left; } } }
+@supports not (display: grid) { @media only screen and (min-width: 768px) { main#global-four-oh-four div#page-content { width: 67%; float: left; clear: left; } } }
 
-@supports (display: grid) { main#four-oh-four div#page-content { grid-area: page-content; } }
+@supports (display: grid) { main#global-four-oh-four div#page-content { grid-area: page-content; } }
 
-main#four-oh-four div#page-content img.page-image { width: 100%; min-width: 100%; min-height: 100px; }
+main#global-four-oh-four div#page-content img.page-image { width: 100%; min-width: 100%; min-height: 100px; }
 
-main#four-oh-four div#page-content div.footnotes { border-top: 2px solid #DEE0E2; margin-top: 45px; padding: 15px 0 0 0; }
+main#global-four-oh-four div#page-content div.footnotes { border-top: 2px solid #DEE0E2; margin-top: 45px; padding: 15px 0 0 0; }
 
-main#four-oh-four div#page-content div.footnotes::before { display: inline-block; width: 100%; padding-bottom: 15px; content: "Footnotes"; }
+main#global-four-oh-four div#page-content div.footnotes::before { display: inline-block; width: 100%; padding-bottom: 15px; content: "Footnotes"; }
 
-main#page { padding: 45px 0; }
+main#page, main#format-page { padding: 45px 0; }
 
-@supports (display: grid) { main#page { display: grid; grid-template-rows: auto auto auto; grid-template-columns: 1fr; grid-template-areas: "page-title" "page-lead-paragraph" "page-content"; }
-  @media only screen and (min-width: 768px) { main#page { grid-template-rows: auto auto auto; grid-template-columns: 2fr 1fr; grid-column-gap: 30px; grid-template-areas: "page-title ." "page-lead-paragraph ." "page-content ."; } } }
+@supports (display: grid) { main#page, main#format-page { display: grid; grid-template-rows: auto auto auto; grid-template-columns: 1fr; grid-template-areas: "page-title" "page-lead-paragraph" "page-content"; }
+  @media only screen and (min-width: 768px) { main#page, main#format-page { grid-template-rows: auto auto auto; grid-template-columns: 2fr 1fr; grid-column-gap: 30px; grid-template-areas: "page-title ." "page-lead-paragraph ." "page-content ."; } } }
 
-main#page::after { content: ""; clear: both; display: table; }
+main#page::after, main#format-page::after { content: ""; clear: both; display: table; }
 
-main#page div#page-title { margin-top: 45px; margin-bottom: 45px; }
+main#page div#page-title, main#format-page div#page-title { margin-top: 45px; margin-bottom: 45px; }
 
-@supports (display: grid) { main#page div#page-title { grid-area: page-title; } }
+@supports (display: grid) { main#page div#page-title, main#format-page div#page-title { grid-area: page-title; } }
 
-main#page div#page-title h1.page-title { margin: 0; padding: 0; }
+main#page div#page-title h1.page-title, main#format-page div#page-title h1.page-title { margin: 0; padding: 0; }
 
-main#page div#page-lead-paragraph { margin-bottom: 45px; }
+main#page div#page-lead-paragraph, main#format-page div#page-lead-paragraph { margin-bottom: 45px; }
 
-@supports (display: grid) { main#page div#page-lead-paragraph { grid-area: page-lead-paragraph; } }
+@supports (display: grid) { main#page div#page-lead-paragraph, main#format-page div#page-lead-paragraph { grid-area: page-lead-paragraph; } }
 
-main#page div#page-lead-paragraph p, main#page div#page-lead-paragraph .text-input, main#page div#page-lead-paragraph .radio-input, main#page div#page-lead-paragraph .checkbox-input, main#page div#page-lead-paragraph label, main#page div#page-lead-paragraph .label, main#page div#page-lead-paragraph .label-hint, main#page div#page-lead-paragraph input[type="text"], main#page div#page-lead-paragraph input[type="email"], main#page div#page-lead-paragraph textarea { font-size: 24px; }
+main#page div#page-lead-paragraph p, main#page div#page-lead-paragraph .text-input, main#page div#page-lead-paragraph .radio-input, main#page div#page-lead-paragraph .checkbox-input, main#page div#page-lead-paragraph label, main#page div#page-lead-paragraph .label, main#page div#page-lead-paragraph .label-hint, main#page div#page-lead-paragraph input[type="text"], main#page div#page-lead-paragraph input[type="email"], main#page div#page-lead-paragraph textarea, main#format-page div#page-lead-paragraph p, main#format-page div#page-lead-paragraph .text-input, main#format-page div#page-lead-paragraph .radio-input, main#format-page div#page-lead-paragraph .checkbox-input, main#format-page div#page-lead-paragraph label, main#format-page div#page-lead-paragraph .label, main#format-page div#page-lead-paragraph .label-hint, main#format-page div#page-lead-paragraph input[type="text"], main#format-page div#page-lead-paragraph input[type="email"], main#format-page div#page-lead-paragraph textarea { font-size: 24px; }
 
-main#page div#page-metadata { margin-bottom: 45px; padding-top: 15px; border-top: 2px solid #DEE0E2; }
+main#page div#page-metadata, main#format-page div#page-metadata { margin-bottom: 45px; padding-top: 15px; border-top: 2px solid #DEE0E2; }
 
-@supports (display: grid) { main#page div#page-metadata { grid-area: page-metadata; } }
+@supports (display: grid) { main#page div#page-metadata, main#format-page div#page-metadata { grid-area: page-metadata; } }
 
-main#page div#page-metadata p, main#page div#page-metadata .text-input, main#page div#page-metadata .radio-input, main#page div#page-metadata .checkbox-input, main#page div#page-metadata label, main#page div#page-metadata .label, main#page div#page-metadata .label-hint, main#page div#page-metadata input[type="text"], main#page div#page-metadata input[type="email"], main#page div#page-metadata textarea { font-size: 16px; margin: 0; }
+main#page div#page-metadata p, main#page div#page-metadata .text-input, main#page div#page-metadata .radio-input, main#page div#page-metadata .checkbox-input, main#page div#page-metadata label, main#page div#page-metadata .label, main#page div#page-metadata .label-hint, main#page div#page-metadata input[type="text"], main#page div#page-metadata input[type="email"], main#page div#page-metadata textarea, main#format-page div#page-metadata p, main#format-page div#page-metadata .text-input, main#format-page div#page-metadata .radio-input, main#format-page div#page-metadata .checkbox-input, main#format-page div#page-metadata label, main#format-page div#page-metadata .label, main#format-page div#page-metadata .label-hint, main#format-page div#page-metadata input[type="text"], main#format-page div#page-metadata input[type="email"], main#format-page div#page-metadata textarea { font-size: 16px; margin: 0; }
 
-main#page div#page-content { margin-bottom: 45px; padding-top: 15px; border-top: 2px solid #DEE0E2; }
+main#page div#page-content, main#format-page div#page-content { margin-bottom: 45px; padding-top: 15px; border-top: 2px solid #DEE0E2; }
 
-@media only screen and (min-width: 768px) { main#page div#page-content { width: 67%; float: left; clear: left; } }
+@media only screen and (min-width: 768px) { main#page div#page-content, main#format-page div#page-content { width: 67%; float: left; clear: left; } }
 
-@supports (display: grid) { main#page div#page-content { width: 100%; float: none; clear: none; grid-area: page-content; } }
+@supports (display: grid) { main#page div#page-content, main#format-page div#page-content { width: 100%; float: none; clear: none; grid-area: page-content; } }
 
-main#page div#page-content img.page-image { width: 100%; min-width: 100%; min-height: 100px; }
+main#page div#page-content img.page-image, main#format-page div#page-content img.page-image { width: 100%; min-width: 100%; min-height: 100px; }
 
-main#page div#page-content div.footnotes { border-top: 2px solid #DEE0E2; margin-top: 45px; padding: 15px 0 0 0; }
+main#page div#page-content div.footnotes, main#format-page div#page-content div.footnotes { border-top: 2px solid #DEE0E2; margin-top: 45px; padding: 15px 0 0 0; }
 
-main#page div#page-content div.footnotes::before { display: inline-block; width: 100%; padding-bottom: 15px; content: "Footnotes"; }
+main#page div#page-content div.footnotes::before, main#format-page div#page-content div.footnotes::before { display: inline-block; width: 100%; padding-bottom: 15px; content: "Footnotes"; }
 
-main#page tr td:first-child { min-width: 75px; vertical-align: top; }
+main#page tr td:first-child, main#format-page tr td:first-child { min-width: 75px; vertical-align: top; }
 
-@media only screen and (min-width: 768px) { main#page tr td:first-child { min-width: 150px; } }
+@media only screen and (min-width: 768px) { main#page tr td:first-child, main#format-page tr td:first-child { min-width: 150px; } }
 
-main#page tr td:nth-child(2) h2 { padding-top: 0; padding-bottom: 10px; }
+main#page tr td:nth-child(2) h2, main#format-page tr td:nth-child(2) h2 { padding-top: 0; padding-bottom: 10px; }
 
-main#page tr td img { margin-top: 10px; max-width: 150px !important; }
+main#page tr td img, main#format-page tr td img { margin-top: 10px; max-width: 150px !important; }
 
 main#email-signature { padding: 45px 0; }
 
