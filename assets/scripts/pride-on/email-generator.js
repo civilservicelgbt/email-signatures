@@ -135,31 +135,32 @@ function copySignature() {
 		// Get the parsed block;
 		var clipboardContent = document.getElementById('email-signature-block').outerHTML;
 		// Copy to the clipboard
+		var clipboardContent = [
+		new ClipboardItem(
+				{
+					"text/html": new Blob(
+						[clipboardContent], {
+							type: "text/html"
+						}
+					)
+				}
+			)
+		];
+		navigator.clipboard.write(clipboardContent).then(function() {
+		  console.log("Copied to clipboard successfully!");
+		}, function() {
+		  console.error("Unable to write to clipboard. :-(");
+		});
 	} else if (sigOutput == "html") {
 		// OR Get the textarea content instead
 		var clipboardContent = document.getElementById('html-output');
 		var clipboardContent = clipboardContent.value;
 		// // Copy to the clipboard
-		// navigator.clipboard.writeText(clipboardContent);
+		navigator.clipboard.writeText(clipboardContent);
 	}
-	var clipboardContent = [
-		new ClipboardItem(
-			{
-				"text/html": new Blob(
-					[clipboardContent], {
-						type: "text/html"
-					}
-				)
-			}
-		)
-	];
 
 
 
 
-	navigator.clipboard.write(clipboardContent).then(function() {
-	  console.log("Copied to clipboard successfully!");
-	}, function() {
-	  console.error("Unable to write to clipboard. :-(");
-	});
+
 }

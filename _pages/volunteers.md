@@ -1,7 +1,13 @@
 ---
 title: Email signature maker
 layout: email-signature/volunteers
-permalink: /volunteers
+
+breadcrumbs-override: true
+breadcrumbs:
+- title: Home
+  url: /
+- title: Email signatures
+  url: /email-signatures
 ---
 
 Civil Service LGBT+ Network volunteers can use this tool to generate an email signature.

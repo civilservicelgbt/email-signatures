@@ -1,173 +1,146 @@
 ---
-layout: global/default
+layout: default
+
+meta-info: false
+caption: false
 ---
 
-<main id="{{ page.layout | slugify }}">
 
-	<div id="page-title">
-		<h1 class="page-title">{{ page.title }}</h1>
+<article class="article--page">
+
+	<div class="grid-row">
+		{% include layouts/header.html %}
 	</div>
 
-	<div id="page-lead-paragraph">
-		<p>{{ page.excerpt }}</p>
+	<div class="grid-row">
+		<div class="grid-column-two-thirds">
+
+				<details>
+
+					<summary>About this tool</summary>
+
+						{{ content }}
+
+				</details>
+
+				<blockquote class="warning-text">
+					<p><strong>This form might not work on your departmental IT system.</strong></p>
+					<p>There is nothing we can do to fix this. If you experience problems, try using a personal device instead.</p>
+				</blockquote>
+
+		</div>
 	</div>
 
-	<div id="page-help">
+	<div id="page-content" class="grid-row">
 
-		<h2>Help</h2>
-
-		<details>
-			<summary>
-				<h2>🏁 Getting started</h2>
-			</summary>
-			{{ content }}
-
-		</details>
-
-	</div>
-
-	<div id="page-content">
-
-		<div id="signature-settings">
+		<div id="signature-settings" class="grid-column-one-half">
 
 			<h2>Settings</h2>
 
-			<fieldset id="sig-format">
-			<details open>
+			<fieldset id="sig-format" aria-describedby="sig-format--legend" class="fieldset">
+			<legend id="sig-colours--legend">Choose a style</legend>
 
-				<summary>
-					<h3><legend>Choose a style</legend></h3>
-				</summary>
+				<p class="hint">Which email signature format do you want to use?</p>
 
-				<p class="legend">Which email signature format do you want to use?</p>
+				<div class="radios">
 
-				<div class="radio-input">
-					<input onclick="generatePreview()" type="radio" name="sig-format" id="sig-format-default" value="default" checked>
-					<label for="sig-format-default">
-						Default (tall)
-					</label>
+					<div class="radios--item">
+						<input onclick="generatePreview()" type="radio" class="radios--input" name="sig-format" id="sig-format-default" value="default" checked>
+						<label class="radios--label" for="sig-format-default">
+							Default (tall)
+						</label>
+					</div>
+
+					<div class="radios--item">
+						<input onclick="generatePreview()" type="radio" class="radios--input" name="sig-format" id="sig-format-default-wide" value="default-wide">
+						<label class="radios--label" for="sig-format-default-wide">
+							Default (wide)
+						</label>
+					</div>
+
 				</div>
-
-				<div class="radio-input">
-					<input onclick="generatePreview()" type="radio" name="sig-format" id="sig-format-default-wide" value="default-wide">
-					<label for="sig-format-default-wide">
-						Default (wide)
-					</label>
-				</div>
-
-				<div class="radio-input">
-					<input onclick="generatePreview()" type="radio" name="sig-format" id="sig-format-PrideOn2021" value="PrideOn2021">
-					<label for="sig-format-PrideOn2021">
-						Pride On 2021 (tall)
-					</label>
-				</div>
-
-				<div class="radio-input">
-					<input onclick="generatePreview()" type="radio" name="sig-format" id="sig-format-PrideOn2021-wide" value="PrideOn2021-wide">
-					<label for="sig-format-PrideOn2021-wide">
-						Pride On 2021 (wide)
-					</label>
-				</div>
-
-
-
-			</details>
 			</fieldset>
 
-			<fieldset id="sig-fields">
-				<details>
+			<hr>
 
-					<summary>
-						<h3><legend>Enter your details</legend></h3>
-					</summary>
+			<fieldset id="sig-fields" aria-describedby="sig-fields--legend" class="fieldset">
+				<legend>Enter your details</legend>
 
 					<div class="text-input">
-						<label for="sig-name">Your name</label>
-						<input id="sig-name" name="sig-name" type="text" placeholder="Joan Doe" onfocusout="generatePreview();">
+						<label class="label-sm input-label label" for="sig-name">Your name</label>
+						<input class="input" id="sig-name" name="sig-name" type="text" placeholder="Joan Doe" onfocusout="generatePreview();">
 					</div>
 
 					<div class="text-input">
-						<label for="sig-role">Your role</label>
-						<input id="sig-role" name="sig-role" type="text" placeholder="Volunteer" onfocusout="generatePreview();">
+						<label class="label-sm input-label label" for="sig-role">Your role</label>
+						<input class="input"  id="sig-role" name="sig-role" type="text" placeholder="Volunteer" onfocusout="generatePreview();">
 					</div>
 
 					<div class="text-input">
-						<label for="sig-number">Your phone number</label>
-						<input id="sig-number" name="sig-number" type="text" placeholder="07000 100 200" onfocusout="generatePreview();">
+						<label class="label-sm input-label label" for="sig-number">Your phone number</label>
+						<input class="input"  id="sig-number" name="sig-number" type="text" placeholder="07000 100 200" onfocusout="generatePreview();">
 					</div>
 
 					<div class="text-input">
-						<label for="sig-email">Your email</label>
-						<input id="sig-email" name="sig-email" type="email" placeholder="info@civilservice.lgbt" value="info@civilservice.lgbt" onfocusout="generatePreview();">
+						<label class="label-sm input-label label" for="sig-email">Your email</label>
+						<input class="input" id="sig-email" name="sig-email" type="email" placeholder="info@civilservice.lgbt" value="info@civilservice.lgbt" onfocusout="generatePreview();">
 					</div>
 
 				</details>
 
 			</fieldset>
 
-			<fieldset id="sig-fields">
-			<details>
+			<hr>
 
-				<summary>
-					<h3>Signature output options</h3>
-				</summary>
+			<fieldset id="sig-fields" aria-describedby="sig-fields--fieldset" class="fieldset">
 
-					<p class="legend">Signature output format</p>
-					<p class="label-hint">Some email clients support “parsed” email signatures and some require you to paste plain “HTML”.</p>
+				<legend id="sig-fields--fieldset">Signature output format</legend>
 
-					<div class="radio-input">
-						<input onclick="generatePreview()" type="radio" name="sig-output" id="sig-output-parsed" value="parsed" checked>
-						<label for="sig-output-parsed">
+					<p class="hint">Some email clients support “parsed” email signatures and some require you to paste plain “HTML”.</p>
+
+					<div class="radios--item">
+						<input onclick="generatePreview()" type="radio" class="radios--input" name="sig-output" id="sig-output-parsed" value="parsed" checked>
+						<label class="radios--label" for="sig-output-parsed">
 							Parsed
 						</label>
 					</div>
 
-					<div class="radio-input">
-						<input onclick="generatePreview()" type="radio" name="sig-output" id="sig-output-html" value="html">
-						<label for="sig-output-html">
+					<div class="radios--item">
+						<input onclick="generatePreview()" type="radio" class="radios--input" name="sig-output" id="sig-output-html" value="html">
+						<label class="radios--label" for="sig-output-html">
 							Plain HTML
 						</label>
 					</div>
 
-			</details>
 			</fieldset>
 
-			<details>
+			<hr>
 
-				<summary>
-					<h3>Copy signature</h3>
-				</summary>
-
-					<label for="copy-signature">
-						Copy signature
-					</label>
-					<p class="label-hint">Use this button to copy the signature to your clipboard.</p>
-					<p class="label-hint">If the output doesn't format as you'd expect when you paste it into your email client, try using a different output format</p>
-					<button onClick="copySignature()" id="copy-signature">Copy signature</button>
-
-			</details>
+			<label class="label label-md" for="copy-signature">
+				Copy signature
+			</label>
+			<p class="hint">Use this button to copy the signature to your clipboard.</p>
+			<p class="hint">If the output doesn't format as you'd expect when you paste it into your email client, try using a different output format</p>
+			<button class="button" onClick="copySignature()" id="copy-signature">Copy signature</button>
 
 		</div>
 
 
+		<div id="signature-preview" class="grid-column-one-half">
 
-	</div>
+			<h2>Preview</h2>
 
-	<div id="signature-preview">
+			<div id="email-signature-block">
 
-		<h2>Preview</h2>
+				{% include signatures/volunteers/default.html %}
 
-		<div id="email-signature-block">
+			</div>
 
-			{% include signatures/volunteers/default.html %}
+			<textarea id="html-output" rows="5" wrap="soft">
 
+			</textarea>
 		</div>
 
-		<textarea id="html-output" rows="10" wrap="soft">
-
-		</textarea>
 	</div>
-
-</main>
 
 <script type="text/javascript" src="{{ site.url | append: site.baseurl | append: site.js-path | append: '/volunteers/email-generator.js' }}"></script>

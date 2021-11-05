@@ -1,10 +1,16 @@
 ---
 title: Email signature maker
 layout: email-signature/pride-on
-permalink: /pride-on
+
+breadcrumbs-override: true
+breadcrumbs:
+- title: Home
+  url: /
+- title: Email signatures
+  url: /email-signatures
 ---
 
-Use this tool to create an signature you can put in your emails for Pride season.
+Use this tool to create a signature you can put in your emails for Pride season.
 
 1. **Choose a style of signature.** Choose your colours and message.
 2. **Choose a signature output.** Some email clients support “parsed” email signatures and some require you to paste plain “HTML”. Try both and see which one works best.
