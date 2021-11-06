@@ -1,0 +1,36 @@
+---
+layout: default
+
+meta-info: false
+caption: false
+---
+
+
+<article class="article--page">
+
+	<div class="grid-row">
+		{% include layouts/header.html %}
+	</div>
+
+	<div class="grid-row">
+		<div class="grid-column-two-thirds">
+
+				<details style="margin-bottom: 40px">
+
+					<summary>About this tool</summary>
+
+						{{ page.help-text | markdownify }}
+
+						<blockquote class="warning-text">
+							<p><strong>This form might not work on your departmental IT system.</strong></p>
+							<p>There is nothing we can do to fix this. If you experience problems, try using a personal device instead.</p>
+						</blockquote>
+
+				</details>
+
+		</div>
+	</div>
+
+	{{ content }}
+
+</article>

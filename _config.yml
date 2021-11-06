@@ -158,12 +158,9 @@ google-analytics-domain: ".www.civilservice.lgbt"
 permalink: /:year/:month/:day/:title:output_ext
 
 collections:
-  pages:
+  generators:
     output: true
     permalink: /:path/
-    defaults:
-      values:
-        layout: page
 
 ##################
 # Build settings #

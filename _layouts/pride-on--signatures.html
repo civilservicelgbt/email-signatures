@@ -1,0 +1,108 @@
+---
+layout: email-signatures
+
+meta-info: false
+caption: false
+---
+
+<div id="page-content" class="grid-row">
+
+	<div id="signature-settings" class="grid-column-one-half">
+
+		<h2>Settings</h2>
+
+		<fieldset id="sig-colours" aria-describedby="sig-colours--legend" class="fieldset">
+
+			<legend id="sig-colours--legend">Choose a style</legend>
+
+			<p class="hint">Which email signature format do you want to use?</p>
+
+			<div class="radios">
+
+				<div class="radios--item">
+					<input onclick="generatePreview()" type="radio" class="radios--input" name="sig-colour" id="sig-colour-magenta" value="magenta" checked>
+					<label class="radios--label" for="sig-colour-magenta">
+						Magenta
+					</label>
+				</div>
+
+				<div class="radios--item">
+					<input onclick="generatePreview()" type="radio" class="radios--input" name="sig-colour" id="sig-colour-cyan" value="cyan">
+					<label class="radios--label" for="sig-colour-cyan">
+						Cyan
+					</label>
+				</div>
+
+				<div class="radios--item">
+					<input onclick="generatePreview()" type="radio" class="radios--input" name="sig-colour" id="sig-colour-yellow" value="yellow">
+					<label class="radios--label" for="sig-colour-yellow">
+						Yellow
+					</label>
+				</div>
+
+			</div>
+
+		</fieldset>
+
+		<hr>
+
+		<fieldset id="sig-output" aria-describedby="sig-output--fieldset" class="fieldset">
+
+			<legend id="sig-output--fieldset">Signature output format</legend>
+
+			<p class="hint">Some email clients support “parsed” email signatures and some require you to paste plain “HTML”.</p>
+
+			<div class="radios">
+
+				<div class="radios--item">
+					<input onclick="generatePreview()" type="radio" class="radios--input" name="sig-output" id="sig-output-parsed" value="parsed" checked>
+					<label class="radios--label" for="sig-output-parsed">
+						Parsed
+					</label>
+				</div>
+
+				<div class="radios--item">
+					<input onclick="generatePreview()" type="radio" class="radios--input" name="sig-output" id="sig-output-html" value="html">
+					<label class="radios--label" for="sig-output-html">
+						Plain HTML
+					</label>
+				</div>
+
+			</div>
+
+		</fieldset>
+
+		<hr>
+
+		<fieldset class="fieldset">
+
+				<label class="label label-md" for="copy-signature">
+					Copy signature
+				</label>
+				<p class="hint">Use this button to copy the signature to your clipboard.</p>
+				<p class="hint">If the output doesn't format as you'd expect when you paste it into your email client, try using a different output format</p>
+				<button onClick="copySignature()" id="copy-signature" class="button">Copy signature</button>
+
+		</fieldset>
+
+	</div>
+
+	<div id="signature-preview" class="grid-column-one-half">
+
+		<h2>Preview</h2>
+
+		<div id="email-signature-block">
+
+			{% include signatures/pride-on/pride-on.html %}
+
+		</div>
+
+		<textarea id="html-output" rows="5" wrap="soft">
+
+		</textarea>
+
+	</div>
+
+</div>
+
+<script type="text/javascript" src="{{ site.url | append: site.baseurl | append: site.js-path | append: '/pride-on/email-generator.js' }}"></script>
