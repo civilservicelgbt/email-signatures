@@ -1,9 +1,9 @@
 ---
-title: Email signature maker
+title: "PrideON"
+caption: "Email signature maker"
 excerpt: Use this tool to create a signature you can put in your emails for Pride season.
 layout: pride-on--signatures
 breadcrumbs: false
-
 
 help-text: |
   Use this tool to create a signature you can put in your emails for Pride season.
